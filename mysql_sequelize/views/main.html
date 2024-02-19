@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <table id="user-list">
+      <thead>
+        <tr>
+          <th>아이디</th>
+          <th>패스워드</th>
+          <th>이름</th>
+          <th>년도</th>
+          <th>지역</th>
+          <th>연락처</th>
+          <th>키</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr>
+          <td>{{user.uid}}</td>
+          <td>{{user.upw}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.birthYear}}</td>
+          <td>{{user.addr}}</td>
+          <td>{{user.mobile1}}+{{user.movile2}}</td>
+          <td>{{user.height}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
