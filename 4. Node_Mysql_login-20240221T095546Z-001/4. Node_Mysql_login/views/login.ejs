@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styleshees/style.css">
+
+</head>
+<body>
+  <div>
+    <form action="/login" method="post">
+      <label>로그인</label><br>
+      <input type="text" name="id" placeholder="아이디"><br>
+      <input type="password" name="pw" placeholder="비밀번호"><br>
+      <button type="submit">로그인</button>
+      <p class="message"><a href="/users">회원가입</a></p>
+      <p class="message"><a href="/idpw_find">아이디/패스워드 찾기</a></p>
+      
+    </form>
+  </div>
+</body>
+</html>
